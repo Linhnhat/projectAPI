@@ -11,7 +11,7 @@ conn.connect(function (err){
 
     if (err) throw err.stack;
    
-         res.render('index',{results});
+         res.render('index',{err});
     
 });
 connection.query('select * from tbl_sinhvien', function (error, results, fields) {
